@@ -17,15 +17,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="x in names">
-        <td>{{ x.content }}</td>
-        <td align="center">{{ x.created_at }}</td>
-        <td align="center">{{ x.updated_at }}</td>
+      <tr ng-repeat="quote in quotes">
+        <td>{{ quote.content }}</td>
+        <td align="center">{{ quote.created_at }}</td>
+        <td align="center">{{ quote.updated_at }}</td>
         <td class="text-center settings">
-          <a class="btn btn-info btn-xs" ui-sref="edit-quote({id: x.id})">
+          <a class="btn btn-info btn-xs" ui-sref="edit-quote({id: quote.id})">
             <span class="glyphicon glyphicon-edit"></span> Edit
           </a>
-          <button class="btn btn-danger btn-xs" ng-click="deleteQuote(x.id)">
+          <button class="btn btn-danger btn-xs" ng-click="deleteQuote(quote.id)">
             <span class="glyphicon glyphicon-remove"></span> Del
           </button>
         </td>

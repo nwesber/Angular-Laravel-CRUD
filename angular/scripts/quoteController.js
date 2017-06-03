@@ -5,7 +5,7 @@ app.controller('QuoteController', function($scope, $http, $state){
     method: 'GET',
     url: 'http://localhost/Laravel-Angular-CRUD/api/public/api/quotes'
   }).then(function successCallback(response) {
-    $scope.names = response.data.quote;
+    $scope.quotes = response.data.quote;
   }, function errorCallback(response) {
 
   });
