@@ -20,3 +20,9 @@
 - Start Apache (Server) and MySQL (Database)
 - Open Browser
 - type in your browser http://localhost/Laravel-Angular-CRUD/angular/
+
+#### Running the API
+- Open XAMPP
+- Start Apache (Server) and MySQL (Database)
+- Open Browser
+- type in your browser http://localhost/Laravel-Angular-CRUD/api/public/api/quotes
