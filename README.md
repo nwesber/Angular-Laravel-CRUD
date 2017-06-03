@@ -20,5 +20,3 @@
 - Start Apache (Server) and MySQL (Database)
 - Open Browser
 - type in your browser http://localhost/Laravel-Angular-CRUD/angular/
-
->>>>>>> 9b17b2d4fea8217c325b5d9a98c8682948970df0
