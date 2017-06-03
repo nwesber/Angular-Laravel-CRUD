@@ -7,6 +7,7 @@ use App\Quote;
 
 class QuoteController extends Controller{
 
+  //Create
   public function postQuote(Request $request){
     $quote = new Quote();
     $quote->content = $request->input('content');
@@ -15,6 +16,7 @@ class QuoteController extends Controller{
     return response()->json(['quote' => $quote], 201);
   }
 
+  //Show
   public function showQuote($id){
     $quote = Quote::find($id);
     $response = [
