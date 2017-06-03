@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular-Laravel</title>
+
+  <!-- Base Angular Script -->
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <!-- Styles -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    .settings{
+      width: 30%;
+    }
+  </style>
+</head>
+<body ng-app="myApp">
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="home">Angular-Laravel</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div ui-view></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+
+  <!-- Angular Scripts -->
+  <script src="app.js"></script>
+  <script src="scripts/quoteController.js"></script>
+</body>
+</html>

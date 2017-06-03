@@ -1,0 +1,58 @@
+
+<div class="col-md-8 col-sm-offset-2" style="margin-bottom: 10px;" align="right">
+  <form ng-submit="addQuote()">
+    <input ng-model="content"/>
+    <button type="submit">Add</button>
+  </form>
+</div>
+
+<div class="col-md-8 col-sm-offset-2">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td align="center"><strong>Heroes</strong></td>
+        <td align="center"><strong>Created_At</strong></td>
+        <td align="center"><strong>Updated_At</strong></td>
+        <td class="text-center"><span class="glyphicon glyphicon-cog"></span></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in names">
+        <td>{{ x.content }}</td>
+        <td align="center">{{ x.created_at }}</td>
+        <td align="center">{{ x.updated_at }}</td>
+        <td class="text-center settings">
+          <a class="btn btn-info btn-xs" ui-sref="edit-quote({id: x.id})">
+            <span class="glyphicon glyphicon-edit"></span> Edit
+          </a>
+          <button class="btn btn-danger btn-xs" ng-click="deleteQuote(x.id)">
+            <span class="glyphicon glyphicon-remove"></span> Del
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <label>Quote: </label>
+        <input type="text" class="form-control" name="content" id="content" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+
+<div class="col-md-6 col-sm-offset-3">
+  <form ng-submit="updateQuote()">
+    <label> Hero: </label>
+    <input class="form-control" data-ng-model="content"/>
+    <input type="hidden" ng-model="id" value="{{ id }}">
+    <hr>
+    <a ui-sref="home" class="btn btn-default pull-right">Cancel</a>
+    <button type="submit" class="btn btn-primary pull-right">Submit</button>
+  </form>
+</div>
