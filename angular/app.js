@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ui.router', 'ui.bootstrap']);
+var app = angular.module('myApp', ['ui.router', 'ui.bootstrap', 'angularMoment']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
   $urlRouterProvider.otherwise('/home');
