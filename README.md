@@ -9,7 +9,7 @@
 ###### Laravel (API)
 - Open Terminal
 - change directory via cd api
-- Composer Update
+- Composer Install
 #### Database Migration (MySQL)
 - Create a Database called quotes
 - Open Terminal
@@ -19,10 +19,10 @@
 - Open XAMPP
 - Start Apache (Server) and MySQL (Database)
 - Open Browser
-- type in your browser http://localhost/Laravel-Angular-CRUD/angular/
+- type in your browser http://localhost/Angular-Laravel-CRUD/angular/
 
 #### Running the API
 - Open XAMPP
 - Start Apache (Server) and MySQL (Database)
 - Open Browser
-- type in your browser http://localhost/Laravel-Angular-CRUD/api/public/api/quotes
+- type in your browser http://localhost/Angular-Laravel-CRUD/api/public/api/quotes
