@@ -9,12 +9,12 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
   $locationProvider.hashPrefix('');
 
   $stateProvider.state('home', {
-    url:'/Angular-Laravel-CRUD/angular/',
-    templateUrl: 'Angular-Laravel-CRUD/angular/partials/home.html',
+    url:'crm/Angular-Laravel-CRUD/angular/',
+    templateUrl: 'crm/Angular-Laravel-CRUD/angular/partials/home.html',
     controller: 'QuoteController'
   }).state('edit-quote', {
-    url: '/Angular-Laravel-CRUD/angular/quote/:id',
-    templateUrl: 'Angular-Laravel-CRUD/angular/partials/edit-quote.html',
+    url: 'crm/Angular-Laravel-CRUD/angular/quote/:id',
+    templateUrl: 'crm/Angular-Laravel-CRUD/angular/partials/edit-quote.html',
     controller: 'EditQuoteController'
   });
 

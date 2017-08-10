@@ -3,7 +3,7 @@ app.controller('QuoteController', function($scope, $http, $state){
   /* Get All */
   $http({
     method: 'GET',
-    url: 'http://localhost/Angular-Laravel-CRUD/api/public/api/quotes'
+    url: 'http://localhost/crm/Angular-Laravel-CRUD/api/public/api/quotes'
   }).then(function successCallback(response) {
     $scope.quotes = response.data.quote;
   }, function errorCallback(response) {
@@ -15,7 +15,7 @@ app.controller('QuoteController', function($scope, $http, $state){
     var data = {
       "content": $scope.content
     }
-    $http.post("http://localhost/Angular-Laravel-CRUD/api/public/api/quote", data).then(function successCallback(response) {
+    $http.post("http://localhost/crm/Angular-Laravel-CRUD/api/public/api/quote", data).then(function successCallback(response) {
       $state.reload();
     });
   }
@@ -24,7 +24,7 @@ app.controller('QuoteController', function($scope, $http, $state){
   $scope.deleteQuote = function(id){
     $http({
       method: 'DELETE',
-      url: 'http://localhost/Angular-Laravel-CRUD/api/public/api/quote/' + id
+      url: 'http://localhost/crm/Angular-Laravel-CRUD/api/public/api/quote/' + id
     }).then(function successCallback(response) {
       $state.reload();
     }, function errorCallback(response) {
@@ -41,7 +41,7 @@ app.controller('QuoteController', function($scope, $http, $state){
 
   $http({
       method: 'GET',
-      url: 'http://localhost/Angular-Laravel-CRUD/api/public/api/quote/' + id
+      url: 'http://localhost/crm/Angular-Laravel-CRUD/api/public/api/quote/' + id
     }).then(function successCallback(response) {
       $scope.content = response.data.quote.content;
       $scope.id = response.data.quote.id;
@@ -54,7 +54,7 @@ app.controller('QuoteController', function($scope, $http, $state){
   /* Update Quote */
   $scope.updateQuote = function(){
     var id = $scope.id;
-    var url = 'http://localhost/Angular-Laravel-CRUD/api/public/api/quote/' + id;
+    var url = 'http://localhost/crm/Angular-Laravel-CRUD/api/public/api/quote/' + id;
     var data = {
       "content": $scope.content
     }
